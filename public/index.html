@@ -1,171 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      
-    <link rel='stylesheet' href='style.css'/>
-    <script src="https://kit.fontawesome.com/9bf8cbfd39.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel='stylesheet' href='style.css' />
+  <script src="https://kit.fontawesome.com/9bf8cbfd39.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <!-- <main class="flex items-center justify-center py-10">
-        <div class='grid grid-cols-6 w-1/2 bg-gray-200 rounded-2xl rounded-lg border-4 ring-4 ring-red-900 border border-red-700'>
-      
-      <div class='col-span-2'>
-       <img class='rounded-l-xl sm:h-42 md:h-42 lg:h-32' src='../images/Depositphotos_32909213_l-2015.jpg'/>
-      </div>
-      
-      <div class='pl-6 rounded-r-xl col-span-4 flex flex-col bg-white'>
-        <div class='flex lg:justify-end sm:justify-start mt-2 mr-2'> 
-      <button class="w-32 border-green-700 bg-blue-100 hover:bg-blue-700 border border-green-900 text-blue-800 font-bold py-1 px-4 rounded-full">
-      <div class='flex'> 
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-      </svg>
-      <span> Verified </span>
-      </div>
-      </button>
-      </div>
-      <h1 class='font-bold flex'> <span class='flex mt-1'> <i class="fab fa-canadian-maple-leaf"></i><i class="fab fa-canadian-maple-leaf"></i> </span>  Good Person in Toronto with</h1>
-      <h1 class='font-bold flex'> <span class='pr-1'> Condo in Downtown <i class="fas fa-asterisk text-blue-200"></i> <i class="fas fa-asterisk text-blue-200"></i> <i class="fas fa-glass-cheers text-yellow-200"></i> </span> <MdAcUnit/> <MdAcUnit/> <FaGlassCheers/>
-      </h1>
-      <h1><span class='text-red-800 font-bold'> $300/hr</span> <span class='font-medium'>-Karnish Fransco- 32A34 </span></h1>
-      <h1 class='font-medium'>24 years, Asian</h1>
-      <div class='flex justify-between lg:pr-8 lg:flex-row md:flex-col sm:flex-col xs:flex-col mt-4'> 
-      
-      <div>
-      <button class="w-36 bg-green-300 border border-green-900 text-green-700 font-bold py-1 px-2 rounded-full">
-        <div class='flex '> 
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
-      </svg>
-       <span class="mr-auto"> Available now</span>
-       </div> 
-       </button>
-       </div>
-      
-      
-      <div class='flex  md:mt-2 md:ml-0 sm:ml-0 sm:mt-2'> 
-      <div> 
-      <button class="rounded-l-lg border-green-700 bg-white border border-green-900 text-red-800 font-bold py-1 px-4 px-md-2 rounded-full">
-      <div class='flex'> 
-      
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-      </svg>
-      <span class='sm:text-xs lg:text-xs md:text-xs'> I AM COVID-19 <br/> VACCINATED</span>
-      </div>
-      </button>
-      </div>
-      </div>
-
-      
-      
-     
-      </div>
-      
-      <div>
-        <img class="w-12 ml-auto" src="data:image/jpeg;base64,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"/>
-      </div>
-
-      </div>
-      
-      
-        </div>
-      
-      </main> -->
-      <div class="flex justify-center"> 
-      <div class="flex flex-col absolute"> 
-      <div class="flex md:flex sm:flex shadow-lg  md:mx-auto  max-w-lg md:max-w-2xl lg:h-32 md:h-32 sm:h-32  border border-red-600 rounded-lg">
-        
-        <img class="w-32 lg:h-full md:h-full sm:h-full sm:w-1/3 md:w-1/3 lg:w-1/3  object-cover rounded-lg rounded-r-none pb-5/6" src="https://ik.imagekit.io/q5edmtudmz/FB_IMG_15658659197157667_wOd8n5yFyXI.jpg" alt="bag">
-      
-        
-    
-
-
+  <div class="flex justify-center">
+    <div class="flex flex-col absolute">
+      <div
+        class="flex md:flex sm:flex shadow-lg  md:mx-auto  max-w-lg md:max-w-2xl lg:h-32 md:h-32 sm:h-32  border border-red-600 rounded-lg">
+        <img
+          class="w-32 lg:h-full md:h-full sm:h-full sm:w-1/3 md:w-1/3 lg:w-1/3  object-cover rounded-lg rounded-r-none pb-5/6"
+          src="https://ik.imagekit.io/q5edmtudmz/FB_IMG_15658659197157667_wOd8n5yFyXI.jpg" alt="bag">
         <div class="w-full md:w-2/3 px-4 py-1 bg-white rounded-lg">
-           <!-- <div class="flex items-center">
-              <h2 class="text-xl text-gray-800 font-medium mr-auto">Your Travel Buddy</h2>
-              <p class="text-gray-800 font-semibold tracking-tighter">
-                 only
-                 <i class="text-gray-600 line-through">60$</i>
-                 48$
-              </p>
-           </div> -->
-           <div class='flex lg:justify-end sm:justify-start mt-2 lg:mt-2 md:mt-2 sm:mt-2 mr-2 '> 
-            <button class="w-32 border-green-700 bg-blue-100 hover:bg-blue-700 border border-green-900 text-blue-800 font-bold py-1 px-4 rounded-full">
-            <div class='flex'> 
-            
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-            </svg>
-            <span> Verified </span>
-            </div>
-            </button>
-            </div>
-
-           <!-- <p class="text-sm text-gray-700 mt-4">
-              Lorem, ipsum dolor sit amet consectetur Amet veritatis ipsam reiciendis numquam tempore commodi ipsa suscipit laboriosam, sit earum at sequ adipisicing elit. Amet veritatis ipsam reiciendis numquam tempore commodi ipsa suscipit laboriosam, sit earum at sequi.
-           </p> -->
-           <h1 class='font-bold flex text-xs lg:text-sm md:text-sm sm:text:sm'> <span class='flex mt-1'> <i class="fab fa-canadian-maple-leaf"></i><i class="fab fa-canadian-maple-leaf"></i> </span>  Good Person in Toronto with</h1>
-           <h1 class='font-bold flex'> <span class='pr-1 text-xs lg:text-sm md:text-sm sm:text:sm'> Condo in Downtown <i class="fas fa-asterisk text-blue-200"></i> <i class="fas fa-asterisk text-blue-200"></i> <i class="fas fa-glass-cheers text-yellow-200"></i> </span> <MdAcUnit/> <MdAcUnit/> <FaGlassCheers/>
-           </h1>
-           <h1><span class='text-red-800 font-bold'> $300/hr</span> <span class='text-xs lg:text-sm md:text-sm sm:text:sm'>-Karnish Fransco- 32A34 </span></h1>
-           <h1 class='text-xs lg:text-sm md:text-sm sm:text:sm'>24 years, Asian</h1>
-
-           <!-- <div class="flex  items-center justify-end mt-4 top-auto"> -->
-            <!-- <button class="bg-white text-red-500 px-4 py-2 rounded mr-auto hover:underline">Available Now</button> -->
-             <div class="flex flex-col lg:flex-row md:flex-row sm:flex-row justify-between  mt-4 top-auto">
-            <div class="mr-auto">
-              <button class="w-36 bg-green-300 border border-green-900 text-green-700 font-bold py-1 px-2 rounded-full">
-                <div class='flex '> 
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" />
-              </svg>
-               <span class="mr-auto"> Available now</span>
-               </div> 
-               </button>
-               </div>
-
-              <!-- <button class=" bg-gray-200 text-blue-600 px-2 py-2 rounded-md mr-2">Edit</button> -->
-
-              <div class='mt-2 md:mt-2 lg:mt-2 md:ml-0 sm:ml-0 sm:mt-2'> 
-                <div class="hidden lg:flex md:flex sm:flex"> 
-                <button class="rounded-l-lg border-green-700 bg-white border border-green-900 text-red-800 font-bold py-1 px-4 px-md-2 rounded-full">
-                <div class='flex'> 
-                
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div class='flex lg:justify-end sm:justify-start mt-2 lg:mt-2 md:mt-2 sm:mt-2 mr-2 '>
+            <button
+              class="w-32 border-green-700 bg-blue-100 hover:bg-blue-700 border border-green-900 text-blue-800 font-bold py-1 px-4 rounded-full">
+              <div class='flex'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <span class='text-xs sm:text-xs lg:text-xs md:text-xs'> I AM COVID-19 <br/> VACCINATED</span>
+                <span> Verified </span>
+              </div>
+            </button>
+          </div>
+          <h1 class='font-bold flex text-xs lg:text-sm md:text-sm sm:text:sm'> <span class='flex mt-1'> <i
+                class="fab fa-canadian-maple-leaf"></i><i class="fab fa-canadian-maple-leaf"></i> </span> Good Person in
+            Toronto with</h1>
+          <h1 class='font-bold flex'> <span class='pr-1 text-xs lg:text-sm md:text-sm sm:text:sm'> Condo in Downtown <i
+                class="fas fa-asterisk text-blue-200"></i> <i class="fas fa-asterisk text-blue-200"></i> <i
+                class="fas fa-glass-cheers text-yellow-200"></i> </span>
+            <MdAcUnit />
+            <MdAcUnit />
+            <FaGlassCheers />
+          </h1>
+          <h1><span class='text-red-800 font-bold'> $300/hr</span> <span
+              class='text-xs lg:text-sm md:text-sm sm:text:sm'>-Karnish Fransco- 32A34 </span></h1>
+          <h1 class='text-xs lg:text-sm md:text-sm sm:text:sm'>24 years, Asian</h1>
+          <div class="flex flex-col lg:flex-row md:flex-row sm:flex-row justify-between  mt-4 top-auto">
+            <div class="mr-auto">
+              <button class="w-36 bg-green-300 border border-green-900 text-green-700 font-bold py-1 px-2 rounded-full">
+                <div class='flex '>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z"
+                      clip-rule="evenodd" />
+                  </svg>
+                  <span class="mr-auto"> Available now</span>
                 </div>
+              </button>
+            </div>
+            <div class='mt-2 md:mt-2 lg:mt-2 md:ml-0 sm:ml-0 sm:mt-2'>
+              <div class="hidden lg:flex md:flex sm:flex">
+                <button
+                  class="rounded-l-lg border-green-700 bg-white border border-green-900 text-red-800 font-bold py-1 px-4 px-md-2 rounded-full">
+                  <div class='flex'>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span class='text-xs sm:text-xs lg:text-xs md:text-xs'> I AM COVID-19 <br /> VACCINATED</span>
+                  </div>
                 </button>
-                </div>
-                </div>
-                
-               
-
-           </div>
-           
+              </div>
+            </div>
+          </div>
         </div>
-        
-       
-       
-
-     </div>   
-     
-
-     <div class="absolute flex justify-end w-full"> 
-      <!-- <button class="bg-blue-600 text-gray-200 px-2 py-2 rounded-md ">Publish</button> -->
-      <img src="https://joee.io/public/images/flower/rose%20png.png" class="h-24 w-24 absolute transform  translate-x-8 
+      </div>
+      <div class="absolute flex justify-end w-full">
+        <img src="https://joee.io/public/images/flower/rose%20png.png" class="h-24 w-24 absolute transform  translate-x-8 
       sm:translate-x-8 md:-translate-x-8 lg:-translate-x-8
-      translate-y-32 sm:translate-y-52 md:translate-y-52 lg:translate-y-52" >
+      translate-y-32 sm:translate-y-52 md:translate-y-52 lg:translate-y-52">
+      </div>
     </div>
   </div>
-</div>
-    </body>
+</body>
+
 </html>
