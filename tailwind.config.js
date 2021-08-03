@@ -5,8 +5,8 @@ module.exports = {
     
     extend: {
      height:{
-       '32':'270px',
-       '42':'330px'
+       '32':'216px',
+       '24':'184px'
      },
      margin:{
       '12':'12em',
@@ -14,6 +14,9 @@ module.exports = {
       "80":"21rem",
       "96":"600px"
     },
+    width:{
+      "32": "216px"
+    }
     },
   },
   variants: {
